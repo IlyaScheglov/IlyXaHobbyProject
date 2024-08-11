@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello World!</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #c9708e, #f2b7d9);
+            color: #fff;
+            font-family: sans-serif;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            padding: 2em 0;
+        }
+    </style>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+</head>
+
+<script type="text/javascript" th:src="@{angular/hello-world.js}"></script>
+
+<body ng-app="HOBBY_WEB" ng-controller="HOBBY_WEB_HELLO_WORLD">
+<h1>{{helloWorld}}</h1>
+</body>
+</html>
